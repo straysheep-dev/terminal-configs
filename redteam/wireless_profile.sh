@@ -29,7 +29,7 @@ ITALIC="${C}[3m"
 # Shell variables
 export PROMPT_DIRTRIM=1
 
-WIRELESS_ICON=$(printf '\u2301')  # Electric Arrow unicode character.
+WIRELESS_ICON=$(printf '\U2301')  # Electric Arrow unicode character.
 
 # $ENGAGEMENT_ID is exported by the operator when scope is defined; re-evaluated
 # on every prompt (rather than baked in at source time) so `export

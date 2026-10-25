@@ -31,7 +31,7 @@ ITALIC="${C}[3m"
 # Shell variables
 export PROMPT_DIRTRIM=2
 
-VM_ICON=$(printf '\u232C ')  # Benzene Ring unicode character.
+VM_ICON=$(printf '\U232C ')  # Benzene Ring unicode character.
 
 # Prompt string
 PS1="\[${DG}\]\u[\[${YELLOW}\]vm\[${DG}\]]\h \w: \[${YELLOW}\]${VM_ICON}\[${NC}\] "

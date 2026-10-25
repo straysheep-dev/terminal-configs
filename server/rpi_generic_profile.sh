@@ -31,7 +31,7 @@ ITALIC="${C}[3m"
 # Shell variables
 export PROMPT_DIRTRIM=2
 
-PI_ICON=$(printf '\u213C ')  # Literally the pi symbol
+PI_ICON=$(printf '\U213C ')  # Literally the pi symbol
 
 # Prompt string
 PS1="\[${GREEN}\]\u(\[${RED}\]pi\[${GREEN}\])\[${RED}\]\h \[${GREEN}\]\w: \[${RED}\]${PI_ICON}\[${NC}\] "

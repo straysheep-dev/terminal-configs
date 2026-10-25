@@ -32,8 +32,8 @@ ITALIC="${C}[3m"
 export PROMPT_DIRTRIM=2
 
 PVE_ORANGE="${C}[1;38;5;208m"
-VM_ICON=$(printf '\u232C ')  # Benzene Ring unicode character.
-PROXMOX_ICON=$(printf '\u276F\u276E ')  # Two chevrons forming the Proxmox logo.
+VM_ICON=$(printf '\U232C ')             # Benzene Ring unicode character.
+PROXMOX_ICON=$(printf '\U276F\U276E ')  # Two chevrons forming the Proxmox logo.
 
 # Prompt string
 PS1="\[${PVE_ORANGE}\]${PROXMOX_ICON}\[${NC}\]\[${DG}\]\u[\[${YELLOW}\]vm\[${NC}\]\[${DG}\]]\h \w: \[${YELLOW}\]${VM_ICON}\[${NC}\] "
