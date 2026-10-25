@@ -11,6 +11,8 @@
 
 # Colors and color printing code taken directly from:
 # https://github.com/carlospolop/PEASS-ng/blob/master/linPEAS/builder/linpeas_parts/linpeas_base.sh
+# Color codes used in the PS1 string should be wrapped with brackets so the readline library ignores
+# their characters as line width (e.g. \[$RED\]). Otherwise you may see misaligned linewrapped text.
 C=$(printf '\033')
 RED="${C}[1;31m"
 GREEN="${C}[1;32m"
@@ -32,4 +34,4 @@ export PROMPT_DIRTRIM=2
 VM_ICON=$(printf '\u232C ')  # Benzene Ring unicode character.
 
 # Prompt string
-PS1="${DG}\u[${YELLOW}vm${DG}]\h \w: ${YELLOW}${VM_ICON}${NC} "
+PS1="\[${DG}\]\u[\[${YELLOW}\]vm\[${DG}\]]\h \w: \[${YELLOW}\]${VM_ICON}\[${NC}\] "

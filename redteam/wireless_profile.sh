@@ -9,6 +9,8 @@
 
 # Colors and color printing code taken directly from:
 # https://github.com/carlospolop/PEASS-ng/blob/master/linPEAS/builder/linpeas_parts/linpeas_base.sh
+# Color codes used in the PS1 string should be wrapped with brackets so the readline library ignores
+# their characters as line width (e.g. \[$RED\]). Otherwise you may see misaligned linewrapped text.
 C=$(printf '\033')
 RED="${C}[1;31m"
 GREEN="${C}[1;32m"
@@ -41,4 +43,4 @@ wireless_engagement_segment() {
 }
 
 # Prompt string
-PS1="[\$(wireless_engagement_segment)] ${LIGHT_MAGENTA}\u(${YELLOW}${WIRELESS_ICON}${NC}${LIGHT_MAGENTA})\h${NC} \w:$ "
+PS1="[\$(wireless_engagement_segment)] \[${LIGHT_MAGENTA}\]\u(\[${YELLOW}\]${WIRELESS_ICON}\[${NC}\]\[${LIGHT_MAGENTA}\])\h\[${NC}\] \w:$ "
